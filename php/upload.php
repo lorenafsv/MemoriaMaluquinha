@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 // Verifica se a requisição é do tipo POST (quando o formulário for enviado)
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Inclui o arquivo de conexão com o banco de dados
-    include('/home/bitnami/config/db_connect.php');
+    include('db_connect.php');
 
     // Obtém e limpa o valor do tema enviado pelo formulário
     $tema = mysqli_real_escape_string($conn, $_POST['tema']);
