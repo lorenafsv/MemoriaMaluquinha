@@ -1,6 +1,6 @@
 <?php
 // Incluindo o arquivo de conexão com o banco de dados
-include($_SERVER['DOCUMENT_ROOT'] . '/php/db_connect.php');
+include($_SERVER['DOCUMENT_ROOT'] . 'db_connect.php');
 
 // Função para excluir todas as imagens do diretório
 function excluirImagens($diretorio) {

@@ -6,13 +6,13 @@ ini_set('display_errors', 1);
 // Verifica se a requisição é do tipo POST (quando o formulário for enviado)
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Inclui o arquivo de conexão com o banco de dados
-    include($_SERVER['DOCUMENT_ROOT'] . '/php/db_connect.php');
+    include($_SERVER['DOCUMENT_ROOT'] . 'db_connect.php');
 
     // Obtém e limpa o valor do tema enviado pelo formulário
     $tema = mysqli_real_escape_string($conn, $_POST['tema']);
 
     // Define o diretório onde as imagens serão armazenadas no servidor
-    $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '../uploads/';
+    $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . 'uploads/';
 
     // Array para armazenar os caminhos das imagens enviadas
     $images = [];
