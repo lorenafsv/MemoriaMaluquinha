@@ -79,11 +79,11 @@ $(document).ready(function () {
     // Finalizar o jogo e limpar os dados
     $("#finalizar").click(function () {
         if (confirm("Tem certeza de que deseja limpar o jogo?")) {
-            fetch('php/limpar_jogo.php', { method: 'POST' })
+            fetch('../php/limpar_jogo.php', { method: 'POST' })
                 .then(response => response.text())
                 .then(data => {
                     alert(data); // Mostra a mensagem do PHP
-                    window.location.href = "escolherTema.html"; // Redireciona para a seleção de tema
+                    window.location.href = "../escolherTema.html"; // Redireciona para a seleção de tema
                 })
                 .catch(err => alert("Erro ao limpar o jogo: " + err));
         }
@@ -101,11 +101,11 @@ $(document).ready(function () {
     // Função para criar um novo jogo
     $("#btnCriarNovoJogo").click(function () {
         if (confirm("Tem certeza de que deseja criar um novo jogo?")) {
-            fetch('php/limpar_jogo.php', { method: 'POST' })
+            fetch('../php/limpar_jogo.php', { method: 'POST' })
                 .then(response => response.text())
                 .then(data => {
                     alert(data); // Mostra a mensagem do PHP
-                    window.location.href = "escolherTema.html"; // Redireciona para seleção de tema
+                    window.location.href = "../escolherTema.html"; // Redireciona para seleção de tema
                 })
                 .catch(err => alert("Erro ao criar novo jogo: " + err));
         }
