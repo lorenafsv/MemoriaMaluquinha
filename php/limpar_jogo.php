@@ -1,6 +1,6 @@
 <?php
 // Incluindo o arquivo de conexão com o banco de dados
-require_once('/home/bitnami/config/db_connect.php');
+include('/home/bitnami/config/db_connect.php');
 
 // Função para excluir todas as imagens do diretório
 function excluirImagens($diretorio) {
