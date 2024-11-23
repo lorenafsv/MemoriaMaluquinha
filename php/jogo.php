@@ -60,8 +60,8 @@ $conn->close();
     <title>Memória Maluquinha</title>
 
     <!-- Link para o arquivo de estilo CSS -->
-    <link rel="stylesheet" href="/MemoriaMaluquinha/css/style.css">
-    <link rel="stylesheet" href="/MemoriaMaluquinha/css/fases.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fases.css">
     
     <!-- Configuração de fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,8 +70,8 @@ $conn->close();
 
     <!-- Incluindo jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/MemoriaMaluquinha/script/logicaJogo.js"></script>
-    <script src="/MemoriaMaluquinha/script/script.js"></script>
+    <script src="script/logicaJogo.js"></script>
+    <script src="script/script.js"></script>
     
     <!-- Incluindo jQuery UI -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -107,9 +107,9 @@ $conn->close();
     <div id="containerCartoes">
         <?php foreach ($cartas as $index => $carta): ?>
             <div class="opc ativado" data-id="<?php echo $carta['data_id']; ?>">
-                <img src="/MemoriaMaluquinha/uploads/<?php echo basename($carta['imagem']); ?>" class="front-face">
+                <img src="uploads/<?php echo basename($carta['imagem']); ?>" class="front-face">
                 <button class="back-face">
-                    <img class="img-frente" src="/MemoriaMaluquinha/imgs/personalizado/frente-card.png">
+                    <img class="img-frente" src="imgs/personalizado/frente-card.png">
                 </button>
             </div>
             

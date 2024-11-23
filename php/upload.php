@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tema = mysqli_real_escape_string($conn, $_POST['tema']);
 
     // Define o diretório onde as imagens serão armazenadas no servidor
-    $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/MemoriaMaluquinha/uploads/';
+    $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . 'uploads/';
 
     // Array para armazenar os caminhos das imagens enviadas
     $images = [];
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Obtém o nome do arquivo e define o caminho de destino
             $fileName = basename($_FILES["imagem$i"]["name"]);
             $targetFile = $uploadDirectory . $fileName;
-            $relativePath = '/MemoriaMaluquinha/uploads/' . $fileName;
+            $relativePath = 'uploads/' . $fileName;
             $imageType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION)); // Obtém a extensão do arquivo
 
             // Verifica se o arquivo é uma imagem válida
