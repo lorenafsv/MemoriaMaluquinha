@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definindo o charset e a viewport para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Memória Maluquinha</title>
+    
+    <!-- Links para os arquivos de estilo -->
+    <link rel="stylesheet" href="http://localhost/MemoriaMaluquinha/css/style.css">
+    <link rel="stylesheet" href="http://localhost/MemoriaMaluquinha/css/fases.css">
+    
+    <!-- Fontes externas (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Scripts necessários -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Script para lógica do jogo -->
+    <script src="http://localhost/MemoriaMaluquinha/script/logicaJogo.js"></script>
+    <!-- Script personalizado para funcionalidades gerais -->
+    <script src="http://localhost/MemoriaMaluquinha/script/script.js"></script>
+    <!-- jQuery UI para recursos de interface de usuário -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Botões superiores (para reiniciar o jogo e sair) -->
+    <div class="botoes-superiores">
+        <button id="inicio" title="Início">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+    </div>
+    <!-- Título-->
+    <div class="containerPrincipal">
+        <h1 class="logo_principal">
+            <span class="rosa">E</span><span class="laranja">s</span><span class="azul">c</span><span
+                class="verde">o</span><span class="rosa">l</span><span class="laranja">h</span><span
+                class="azul">e</span><span class="rosa">r</span>
+            <span class="laranja">T</span><span class="azul">e</span><span class="verde">m</span><span
+                class="rosa">a</span>
+        </h1>
+        <!-- Opções de temas -->
+        <div class="container_botoes">
+            <button id="matematicaFase1" class="botao">Matemática</button>
+            <button id="formasFase1" class="botao">Formas</button>
+            <button id="silabasFase1" class="botao">Sílabas</button>
+            <button id="personalizado" class="botao">Personalizar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

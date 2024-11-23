@@ -1,0 +1,175 @@
+/* Definindo as cores principais como variáveis para fácil reutilização */
+:root {
+    --cor_1: #E0E1E2; /* Cor de fundo clara */
+    --cor_2: #2416BF; /* Cor azul escuro */
+    --cor_3: #4D9DE0; /* Cor azul claro */
+    --cor_5: #FC1B62; /* Cor rosa */
+    --cor_6: #FF6B00; /* Cor laranja */
+    --cor_4: #26DB17; /* Cor verde */
+    --cor_7: black; /* Cor preta */
+}
+
+/* Classe para aplicar a cor rosa */
+.rosa {
+    color: var(--cor_5);
+}
+
+/* Classe para aplicar a cor laranja */
+.laranja {
+    color: var(--cor_6);
+}
+
+/* Classe para aplicar a cor azul */
+.azul {
+    color: var(--cor_2);
+}
+
+/* Classe para aplicar a cor verde */
+.verde {
+    color: var(--cor_4);
+}
+
+/* Classe para aplicar a cor preta */
+.preto {
+    color: var(--cor_7);
+}
+
+/* Garantindo que o corpo ocupe toda a altura da tela */
+html, body {
+    margin: 0; /* Remove as margens padrões */
+    padding: 0; /* Remove o padding padrão */
+    height: 100%; /* Garante que o html e o body ocupem 100% da altura */
+    width: 100%; /* Garante que a largura seja 100% */
+    box-sizing: border-box; /* Inclui borda e padding no cálculo da largura e altura */
+}
+
+/* Estilo para o corpo da página */
+body {
+    background: linear-gradient(135deg, var(--cor_3), var(--cor_2)); /* Fundo com gradiente diagonal entre azul claro e azul escuro */
+    background-size: 100% 100%; /* Preenche toda a tela com o gradiente */
+    background-attachment: fixed; /* Mantém o fundo fixo durante o scroll */
+    font-family: 'Fredoka', sans-serif; /* Definição da fonte */
+    display: flex; /* Usando flexbox para organização */
+    flex-direction: column; /* Alinha os itens na vertical */
+    justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+    align-items: center; /* Centraliza os itens na horizontal */
+    min-height: 100vh; /* Garante que o corpo ocupe 100% da altura da tela */
+}
+
+/* Estilo dos botões */
+.botao{
+    height: 100px; /* Altura do botão */
+    width: 250px; /* Largura do botão */
+    border-radius: 70px; /* Bordas arredondadas */
+    border: 3px solid var(--cor_1); /* Borda suave em cor clara */
+    background-color: var(--cor_5); /* Cor de fundo rosa */
+    color: var(--cor_1); /* Cor do texto (branco claro) */
+    font-size: 36px; /* Tamanho da fonte */
+    font-weight: bolder; /* Peso da fonte mais forte */
+    transition: 0.2s; /* Transição suave */
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    margin-bottom: 10px; /* Espaço abaixo do botão */
+    margin-top: 0; /* Sem espaço acima */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.botao:hover{
+    background-color: var(--cor_2); /* Muda o fundo para azul escuro */
+    cursor: pointer; /* Muda o cursor para 'pointer' */
+}
+
+/* Contêiner principal */
+.containerPrincipal {
+    margin-top: 10px; /* Espaço acima */
+    display: flex; /* Usando flexbox */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Contêiner para os botões */
+.container_botoes {
+    margin-top: 20px; /* Espaço acima */
+    display:flex; /* Usando flexbox */
+    flex-direction: column; /* Alinha os botões verticalmente */
+    gap: 25px; /* Espaçamento entre os botões */
+    margin-bottom: 15px; /* Espaço abaixo */
+}
+
+/* Estilo para o título/logo principal */
+.logo_principal {
+    font-size: 105px; /* Tamanho grande para o título */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    text-shadow:
+        3px 3px 0 var(--cor_1), /* Sombra nas diagonais */
+        -3px -3px 0 var(--cor_1),
+        3px -3px 0 var(--cor_1),
+        -3px 3px 0 var(--cor_1),
+        5px 5px 15px rgba(0, 0, 0, 0.7); /* Sombra externa */
+    margin-bottom: 5px; /* Espaço abaixo do logo */
+    margin-top: 0; /* Sem espaço acima */
+}
+
+/* Estilo para o logo/nível */
+.logo_nivel {
+    font-size: 60px; /* Tamanho do texto do nível */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 5px; /* Espaço acima */
+    text-shadow:
+        3px 3px 0 var(--cor_1),
+        -3px -3px 0 var(--cor_1),
+        3px -3px 0 var(--cor_1),
+        -3px 3px 0 var(--cor_1),
+        5px 5px 15px rgba(0, 0, 0, 0.7); /* Sombra externa */
+}
+
+/* Estilo para o alerta de mensagem */
+#alerta {
+    display: none; /* Começa invisível */
+    position: fixed; /* Fixa a posição no centro da tela */
+    top: 50%; /* Posiciona no meio da tela */
+    left: 50%; /* Posiciona no meio da tela */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar */
+    background-color: #FF6B00; /* Cor de fundo laranja */
+    color: white; /* Cor do texto (branco) */
+    font-size: 36px; /* Tamanho grande para o texto */
+    font-weight: bold; /* Peso forte para o texto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    z-index: 9999; /* Garante que o alerta apareça por cima de outros elementos */
+}
+
+/* Estilo para os botões no canto superior */
+.botoes-superiores {
+    position: absolute; /* Posiciona de forma absoluta no canto superior direito */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    display: flex; /* Usando flexbox para alinhar os botões */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Estilo para os botões superiores */
+.botoes-superiores button {
+    background-color: #4D9DE0; /* Cor de fundo azul claro */
+    color: white; /* Cor do texto (branco) */
+    border: none; /* Remove a borda */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1.5em; /* Tamanho da fonte */
+    border-radius: 50%; /* Torna os botões circulares */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+    width: 50px; /* Tamanho fixo para os botões */
+    height: 50px; /* Tamanho fixo para os botões */
+    display: flex; /* Usando flexbox dentro do botão */
+    align-items: center; /* Alinha o conteúdo no centro */
+    justify-content: center; /* Alinha o conteúdo no centro */
+}
+
+/* Efeito ao passar o mouse sobre os botões superiores */
+.botoes-superiores button:hover {
+    background-color: #FF6B00; /* Muda a cor para laranja */
+}

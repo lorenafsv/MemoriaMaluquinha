@@ -1,0 +1,131 @@
+/* Estilo geral do formulário */
+form {
+    background-color: white;
+    /* Cor de fundo branca para o formulário */
+    border-radius: 10px;
+    /* Bordas arredondadas no formulário */
+    padding: 20px;
+    /* Espaçamento interno do formulário */
+    margin: 0 auto;
+    /* Centraliza o formulário na página */
+    text-align: center;
+    /* Centraliza o texto dentro do formulário */
+    width: 600px;
+    /* Largura do formulário */
+}
+
+/* Estilo para os rótulos (labels) */
+label {
+    font-size: 1.2em;
+    /* Tamanho da fonte aumentado para os rótulos */
+    margin-bottom: 5px;
+    /* Espaço abaixo do rótulo */
+    display: block;
+    /* Exibe o rótulo como bloco, forçando uma quebra de linha */
+}
+
+/* Estilo para os campos de input do tipo 'file' (para upload de arquivos) */
+input[type="file"] {
+    border: 2px solid #4D9DE0;
+    /* Borda azul para o campo de arquivo */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    padding: 10px;
+    /* Espaçamento interno no campo */
+    margin-bottom: 10px;
+    /* Espaço abaixo do campo */
+    width: 100%;
+    /* Largura total do campo (ocupando todo o espaço disponível) */
+    box-sizing: border-box;
+    /* Inclui borda e padding no cálculo da largura total */
+    transition: border-color 0.3s ease;
+    /* Transição suave na mudança da cor da borda */
+}
+
+/* Efeito quando o campo de arquivo recebe foco (clicado) */
+input[type="file"]:focus {
+    border-color: #26DB17;
+    /* Muda a cor da borda para verde ao focar */
+}
+
+/* Estilo para os campos de input do tipo 'text' (campo de texto) */
+input[type="text"] {
+    border: 2px solid #4D9DE0;
+    /* Borda azul para o campo de texto */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    padding: 10px;
+    /* Espaçamento interno no campo */
+    margin-bottom: 10px;
+    /* Espaço abaixo do campo */
+    width: 100%;
+    /* Largura total do campo */
+    box-sizing: border-box;
+    /* Inclui borda e padding no cálculo da largura total */
+    transition: border-color 0.3s ease;
+    /* Transição suave na mudança da cor da borda */
+}
+
+/* Efeito quando o campo de texto recebe foco (clicado) */
+input[type="text"]:focus {
+    border-color: #26DB17;
+    /* Muda a cor da borda para verde ao focar */
+}
+
+/* Estilo para campos com valor inválido */
+.invalid {
+    border-color: #FC1B62;
+    /* Borda vermelha para campos inválidos */
+}
+
+/* Estilo para campos com valor válido */
+.valid {
+    border-color: #26DB17;
+    /* Borda verde para campos válidos */
+}
+
+/* Estilo para os botões */
+button {
+    background-color: #2416BF;
+    /* Cor de fundo azul escuro para o botão */
+    color: white;
+    /* Cor do texto do botão */
+    border: none;
+    /* Sem borda */
+    padding: 10px 20px;
+    /* Espaçamento interno do botão */
+    font-size: 1.2em;
+    /* Tamanho da fonte do texto no botão */
+    border-radius: 5px;
+    /* Bordas arredondadas do botão */
+    cursor: pointer;
+    /* Cursor de mão ao passar o mouse sobre o botão */
+    transition: background-color 0.3s ease;
+    /* Transição suave na mudança da cor de fundo */
+    margin-bottom: 15px;
+    /* Espaço abaixo do botão */
+}
+
+/* Efeito de hover (passar o mouse) no botão */
+button:hover {
+    background-color: #FF6B00;
+    /* Muda a cor de fundo para laranja quando o mouse passa por cima */
+    cursor: pointer;
+    /* Cursor de mão permanece */
+}
+
+/* Estilo para feedbacks de validação */
+.feedback {
+    margin-top: 10px;
+    /* Espaço acima do feedback */
+    font-size: 1em;
+    /* Tamanho de fonte padrão */
+    color: #FC1B62;
+    /* Cor vermelha para feedback de erro */
+}
+
+/* Estilo para feedback válido (cor verde) */
+.feedback.valid {
+    color: #26DB17;
+    /* Cor verde para feedback de sucesso */
+}

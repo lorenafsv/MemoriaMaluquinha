@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definindo o charset e a viewport para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Memória Maluquinha</title>
+    
+    <!-- Links para os arquivos de estilo -->
+    <link rel="stylesheet" href="http://localhost/MemoriaMaluquinha/css/style.css">
+    <link rel="stylesheet" href="http://localhost/MemoriaMaluquinha/css/fases.css">
+    
+    <!-- Fontes externas (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Scripts necessários -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Script para lógica do jogo -->
+    <script src="http://localhost/MemoriaMaluquinha/script/logicaJogo.js"></script>
+    <!-- Script personalizado para funcionalidades gerais -->
+    <script src="http://localhost/MemoriaMaluquinha/script/script.js"></script>
+    <!-- jQuery UI para recursos de interface de usuário -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Botões superiores (para reiniciar o jogo e sair) -->
+    <div class="botoes-superiores">
+        <button id="reiniciarJogo" title="Reiniciar Nível">
+            <i class="fas fa-redo"></i>
+        </button>
+        <button id="escolherTemas" title="Sair do Jogo">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+    </div>
+    
+    <!-- Título e nível do jogo -->
+    <h1 class="logo_principal">
+        <span class="rosa">F</span><span class="laranja">o</span><span class="azul">r</span><span
+            class="verde">m</span><span class="rosa">a</span><span class="laranja">s</span>
+    </h1>
+    <h1 class="logo_nivel"><span class="preto">Nível 2</span></h1>
+
+    <!-- Botão para próxima fase -->
+    <div id="proximaFase">
+        <button id="formasFase3" class="botao">Próximo Nível</button>
+    </div>
+
+    <!-- Contêiner de cartas do jogo -->
+    <div id="containerCartoes">
+        <div class="opc ativado" data-id="1">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/5.1.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+        <div class="opc ativado" data-id="3">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/7.1.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+        <div class="opc ativado" data-id="2">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/6.1.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+        <div class="opc ativado" data-id="1">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/5.2.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+        <br>
+        <div class="opc ativado" data-id="3">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/7.2.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+        <div class="opc ativado" data-id="4">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/8.2.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+        <div class="opc ativado" data-id="4">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/8.1.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+        <div class="opc ativado" data-id="2">
+            <img src="http://localhost/MemoriaMaluquinha/imgs/formas/6.2.png" class="front-face">
+            <button class="back-face"><img class="img-frente"
+                    src="http://localhost/MemoriaMaluquinha/imgs/formas/tema_form.png"></button>
+        </div>
+    </div>
+
+    <!-- Alerta de vitória -->
+    <div id="alerta">
+        <p>Parabéns!</p>
+        <p>Você ganhou!</p>
+    </div>
+
+    <!-- Som de clique -->
+    <audio id="clickSound" src=""></audio>
+</body>
+
+</html>

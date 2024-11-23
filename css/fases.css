@@ -1,0 +1,102 @@
+/* Estilo para os cartões (opções) */
+.opc {
+    display: inline-block;
+    /* Exibe os cartões lado a lado */
+    height: 220px;
+    /* Altura do cartão */
+    width: 150px;
+    /* Largura do cartão */
+    background-color: #ffffff;
+    /* Cor de fundo do cartão */
+    margin: 10px;
+    /* Espaçamento entre os cartões */
+    position: relative;
+    /* Necessário para posicionamento absoluto das faces */
+    transform: scale(1);
+    /* Escala inicial do cartão */
+    transform-style: preserve-3d;
+    /* Preserva a transformação 3D nas faces do cartão */
+    transition: transform 0.5s;
+    /* Transição suave na transformação */
+    border-radius: 25px;
+    /* Bordas arredondadas do cartão */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    /* Sombra suave ao redor do cartão */
+    box-sizing: border-box;
+    /* Inclui a borda dentro das dimensões do cartão */
+    border: 3px solid #ffffff;
+    /* Borda suave e branca para o cartão */
+}
+
+/* Estilo para as faces do cartão (frente e verso) */
+.front-face,
+.back-face {
+    width: 100%;
+    /* As faces ocupam 100% do tamanho do cartão */
+    height: 100%;
+    /* As faces ocupam 100% da altura do cartão */
+    position: absolute;
+    /* Posiciona as faces em cima uma da outra */
+    border-radius: 25px;
+    /* Bordas arredondadas para as faces */
+    background: #ffffff;
+    /* Cor de fundo das faces */
+    backface-visibility: hidden;
+    /* Impede a exibição da face traseira quando o cartão é virado */
+    box-sizing: border-box;
+    /* Inclui a borda dentro das dimensões da face */
+    border: 3px solid #ffffff;
+    /* Borda suave e branca para as faces */
+    cursor: pointer;
+    /* Cursor de mão para indicar interatividade */
+}
+
+/* Estilo para a imagem na frente do cartão */
+.img-frente {
+    width: 95%;
+    /* A imagem ocupa 95% da largura do cartão */
+    height: 95%;
+    /* A imagem ocupa 95% da altura do cartão */
+    border-radius: 25px;
+    /* Bordas arredondadas para a imagem */
+}
+
+/* Estilo para o verso do cartão */
+.back-face {
+    background-color: #ffffff;
+    /* Cor de fundo para o verso do cartão */
+}
+
+/* Estilo para a frente do cartão (girada 180°) */
+.front-face {
+    transform: rotateY(180deg);
+    /* Gira a frente do cartão para ocultá-la */
+    background-color: #ffffff;
+    /* Cor de fundo da frente */
+}
+
+/* Estilo para o contêiner dos cartões */
+#containerCartoes {
+    display: flexbox;
+    /* Flexbox para organizar os cartões */
+    flex-direction: column;
+    /* Organiza os cartões em coluna */
+}
+
+/* Estilo de rotação 3D para os cartões */
+.rotate3d {
+    transform: rotateY(180deg);
+    /* Gira o cartão 180° no eixo Y */
+}
+
+/* Esconde a área de "próxima fase" até que seja necessário */
+#proximaFase {
+    display: none;
+    /* Inicialmente invisível */
+}
+
+/* Esconde a área de "novo jogo" até que seja necessário */
+#novoJogo {
+    display: none;
+    /* Inicialmente invisível */
+}
