@@ -1,6 +1,6 @@
 <?php
 // Incluindo o arquivo de conexão com o banco de dados
-include(__DIR__ . '/../config/db_connect.php');
+include('/home/bitnami/config/db_connect.php');
 
 // Verificando se o parâmetro 'tema' foi passado na URL
 if (isset($_GET['tema'])) {
