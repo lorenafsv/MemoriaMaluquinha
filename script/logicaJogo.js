@@ -35,7 +35,7 @@ $(document).ready(function () {
                     .fadeOut(500); // Desaparece suavemente
 
                 // Reproduz um som de vitória
-                var victorySound = new Audio("audios/vitoria.mp3");
+                var victorySound = new Audio("../audios/vitoria.mp3");
                 victorySound.play();
 
                 // Faz o botão aparecer suavemente
@@ -63,16 +63,16 @@ $(document).ready(function () {
     // Sons ao clicar nos cartões
     $(".opc").click(function () {
         if ($(this).data("id") === 1) {
-            $('#clickSound').attr('src', "audios/som1.mp3")[0].play();
+            $('#clickSound').attr('src', "../audios/som1.mp3")[0].play();
         }
         if ($(this).data("id") === 2) {
-            $('#clickSound').attr('src', "audios/som2.mp3")[0].play();
+            $('#clickSound').attr('src', "../audios/som2.mp3")[0].play();
         }
         if ($(this).data("id") === 3) {
-            $('#clickSound').attr('src', "audios/som3.mp3")[0].play();
+            $('#clickSound').attr('src', "../audios/som3.mp3")[0].play();
         }
         if ($(this).data("id") === 4) {
-            $('#clickSound').attr('src', "audios/som4.mp3")[0].play();
+            $('#clickSound').attr('src', "../audios/som4.mp3")[0].play();
         }
     });
 
