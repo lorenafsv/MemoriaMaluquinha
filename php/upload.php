@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tema = mysqli_real_escape_string($conn, $_POST['tema']);
 
     // Define o diretório onde as imagens serão armazenadas no servidor
-    $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . 'uploads/';
+    $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/uploads/';
 
     // Array para armazenar os caminhos das imagens enviadas
     $images = [];
