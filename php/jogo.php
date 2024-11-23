@@ -1,6 +1,6 @@
 <?php
 // Incluindo o arquivo de conexão com o banco de dados
-include 'db_connect.php';
+require_once('/home/bitnami/config/db_connect.php');
 
 // Verificando se o parâmetro 'tema' foi passado na URL
 if (isset($_GET['tema'])) {
@@ -60,8 +60,8 @@ $conn->close();
     <title>Memória Maluquinha</title>
 
     <!-- Link para o arquivo de estilo CSS -->
-    <link rel="stylesheet" href="http://localhost/MemoriaMaluquinha/css/style.css">
-    <link rel="stylesheet" href="http://localhost/MemoriaMaluquinha/css/fases.css">
+    <link rel="stylesheet" href="/MemoriaMaluquinha/css/style.css">
+    <link rel="stylesheet" href="/MemoriaMaluquinha/css/fases.css">
     
     <!-- Configuração de fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,8 +70,8 @@ $conn->close();
 
     <!-- Incluindo jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="http://localhost/MemoriaMaluquinha/script/logicaJogo.js"></script>
-    <script src="http://localhost/MemoriaMaluquinha/script/script.js"></script>
+    <script src="/MemoriaMaluquinha/script/logicaJogo.js"></script>
+    <script src="/MemoriaMaluquinha/script/script.js"></script>
     
     <!-- Incluindo jQuery UI -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -107,9 +107,9 @@ $conn->close();
     <div id="containerCartoes">
         <?php foreach ($cartas as $index => $carta): ?>
             <div class="opc ativado" data-id="<?php echo $carta['data_id']; ?>">
-                <img src="http://localhost/MemoriaMaluquinha/uploads/<?php echo basename($carta['imagem']); ?>" class="front-face">
+                <img src="/MemoriaMaluquinha/uploads/<?php echo basename($carta['imagem']); ?>" class="front-face">
                 <button class="back-face">
-                    <img class="img-frente" src="http://localhost/MemoriaMaluquinha/imgs/personalizado/frente-card.png">
+                    <img class="img-frente" src="/MemoriaMaluquinha/imgs/personalizado/frente-card.png">
                 </button>
             </div>
             
