@@ -4,8 +4,8 @@
 // Definindo os parâmetros de conexão com o banco de dados
 $servername = "localhost"; // Endereço do servidor (geralmente 'localhost' para servidores locais)
 $username = "root"; // Nome de usuário do banco de dados (padrão 'root' para muitas instalações locais)
-$password = ""; // Senha do banco de dados (deixe em branco se não houver senha configurada)
-$dbname = "memoria"; // Nome do banco de dados que será acessado
+$password = "teTHOSXDQ:b8"; // Senha do banco de dados (deixe em branco se não houver senha configurada)
+$dbname = "memoria_maluquinha"; // Nome do banco de dados que será acessado
 
 // Estabelecendo a conexão com o banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);
