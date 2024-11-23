@@ -53,13 +53,14 @@ $(document).ready(function () {
         window.location.href = "index.html";
     });
 
-    // Adiciona um evento para reiniciar o jogo (recarregar a página)
-    document.getElementById('reiniciarJogo').addEventListener('click', function () {
-        location.reload(); // Recarrega a página atual
+    // Evento para recarregar a página atual
+    $('#reiniciarJogo').on('click', function () {
+        location.reload();
     });
 
-    // Adiciona um evento para redirecionar para a página de escolha de temas
-    document.getElementById('escolherTemas').addEventListener('click', function () {
-        window.location.href = 'escolherTema.html'; // Redireciona para a página de escolher temas
+    // Evento que redireciona para a página escolher temas
+    // É redundante porque era necessário ids diferentes
+    $('#escolherTemas').on('click', function () {
+        window.location.href = 'escolherTema.html';
     });
 });
