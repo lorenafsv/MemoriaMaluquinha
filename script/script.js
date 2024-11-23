@@ -62,15 +62,4 @@ $(document).ready(function () {
     document.getElementById('escolherTemas').addEventListener('click', function () {
         window.location.href = 'escolherTema.html'; // Redireciona para a página de escolher temas
     });
-
-    // Adiciona um evento para reiniciar o jogo (recarregar a página) novamente
-    document.getElementById('reiniciarJogo').addEventListener('click', function () {
-        location.reload(); // Recarrega a página atual
-    });
-
-    // Adiciona um evento para redirecionar para a página de escolher temas novamente
-    document.getElementById('escolherTemas').addEventListener('click', function () {
-        window.location.href = 'escolherTema.html'; // Redireciona para a página de escolher temas
-    });
-
 });
