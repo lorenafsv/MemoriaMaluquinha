@@ -35,7 +35,7 @@ $(document).ready(function () {
                     .fadeOut(500); // Desaparece suavemente
 
                 // Reproduz um som de vitória
-                var victorySound = new Audio("../audios/vitoria.mp3");
+                var victorySound = new Audio("/MemoriaMaluquinha/audios/vitoria.mp3");
                 victorySound.play();
 
                 // Faz o botão aparecer suavemente
@@ -63,23 +63,23 @@ $(document).ready(function () {
     // Sons ao clicar nos cartões
     $(".opc").click(function () {
         if ($(this).data("id") === 1) {
-            $('#clickSound').attr('src', "../audios/som1.mp3")[0].play();
+            $('#clickSound').attr('src', "/MemoriaMaluquinha/audios/som1.mp3")[0].play();
         }
         if ($(this).data("id") === 2) {
-            $('#clickSound').attr('src', "../audios/som2.mp3")[0].play();
+            $('#clickSound').attr('src', "/MemoriaMaluquinha/audios/som2.mp3")[0].play();
         }
         if ($(this).data("id") === 3) {
-            $('#clickSound').attr('src', "../audios/som3.mp3")[0].play();
+            $('#clickSound').attr('src', "/MemoriaMaluquinha/audios/som3.mp3")[0].play();
         }
         if ($(this).data("id") === 4) {
-            $('#clickSound').attr('src', "../audios/som4.mp3")[0].play();
+            $('#clickSound').attr('src', "/MemoriaMaluquinha/audios/som4.mp3")[0].play();
         }
     });
 
     // Finalizar o jogo e limpar os dados
     $("#finalizar").click(function () {
         if (confirm("Tem certeza de que deseja limpar o jogo?")) {
-            fetch('../php/limpar_jogo.php', { method: 'POST' })
+            fetch('/MemoriaMaluquinha/php/limpar_jogo.php', { method: 'POST' })
                 .then(response => response.text())
                 .then(data => {
                     alert(data); // Mostra a mensagem do PHP
@@ -101,7 +101,7 @@ $(document).ready(function () {
     // Função para criar um novo jogo
     $("#btnCriarNovoJogo").click(function () {
         if (confirm("Tem certeza de que deseja criar um novo jogo?")) {
-            fetch('../php/limpar_jogo.php', { method: 'POST' })
+            fetch('/MemoriaMaluquinha/php/limpar_jogo.php', { method: 'POST' })
                 .then(response => response.text())
                 .then(data => {
                     alert(data); // Mostra a mensagem do PHP
