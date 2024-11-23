@@ -1,6 +1,6 @@
 <?php
 // Incluindo o arquivo de conexão com o banco de dados
-include($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
+include(__DIR__ . '/db_connect.php');
 
 // Verificando se o parâmetro 'tema' foi passado na URL
 if (isset($_GET['tema'])) {
