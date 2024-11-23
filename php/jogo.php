@@ -109,7 +109,7 @@ $conn->close();
             <div class="opc ativado" data-id="<?php echo $carta['data_id']; ?>">
                 <img src="/MemoriaMaluquinha/uploads/<?php echo basename($carta['imagem']); ?>" class="front-face">
                 <button class="back-face">
-                    <img class="img-frente" src="imgs/personalizado/frente-card.png">
+                    <img class="img-frente" src="/MemoriaMaluquinha/imgs/personalizado/frente-card.png">
                 </button>
             </div>
             
