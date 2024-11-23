@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Obtém o nome do arquivo e define o caminho de destino
             $fileName = basename($_FILES["imagem$i"]["name"]);
             $targetFile = $uploadDirectory . $fileName;
-            $relativePath = 'uploads/' . $fileName;
+            $relativePath = '/uploads/' . $fileName;
             $imageType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION)); // Obtém a extensão do arquivo
 
             // Verifica se o arquivo é uma imagem válida
