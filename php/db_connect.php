@@ -4,7 +4,7 @@
 // Definindo os parâmetros de conexão com o banco de dados
 $servername = "localhost"; // Endereço do servidor (geralmente 'localhost' para servidores locais)
 $username = "root"; // Nome de usuário do banco de dados (padrão 'root' para muitas instalações locais)
-$password = "Usv.!j.KEXq6"; // Senha do banco de dados (deixe em branco se não houver senha configurada)
+$password = "7CG!I85CB=!q"; // Senha do banco de dados (deixe em branco se não houver senha configurada)
 $dbname = "memoria"; // Nome do banco de dados que será acessado
 
 // Estabelecendo a conexão com o banco de dados
