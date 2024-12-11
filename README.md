@@ -21,15 +21,9 @@ O **Memória Maluquinha** é um projeto que tem o objetivo de ser uma ferramenta
 2. **Comece o Jogo**: O jogo da memória começa com 8 cartas viradas para baixo. O objetivo é virar duas cartas por vez e encontrar pares correspondentes.
 3. **Vitória**: O jogo termina quando todos os pares forem encontrados. Uma mensagem de vitória será exibida.
 
-## Atualmente o arquivo está configurado para o lightsail, mas pode ser configurado para rodar localmente
 ## Como Rodar o Projeto Localmente
-### Pré-requisitos
-- Instalar o **XAMPP** ou qualquer servidor web local (Apache, PHP, MySQL).
-- Ter o **PHP** e o **MySQL** funcionando corretamente.
-- Ajustar os caminhos relativos dos arquivos.
-
-### Passos
-1. Faça o clone deste repositório:
+1. Tenha o PHP e o MySQL funcionando corretamente.
+2. Faça o clone deste repositório:
 
 ```bash
 git clone https://github.com/lorenafsv/MemoriaMaluquinha.git
